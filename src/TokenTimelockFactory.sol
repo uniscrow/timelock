@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// OpenZeppelin Contracts (last updated v4.9.0) (token/ERC20/utils/TokenTimelock.sol)
+
 
 pragma solidity ^0.8.0;
 
@@ -7,11 +7,7 @@ pragma solidity ^0.8.0;
 import "./TokenTimelock.sol";
 
 /**
- * @dev A token holder contract that will allow a beneficiary to extract the
- * tokens after a given release time.
- *
- * Useful for simple vesting schedules like "advisors get all of their tokens
- * after 1 year".
+ * @dev A factory to create TokenTimelock(s)
  */
 contract TokenTimelockFactory {
     using SafeERC20 for IERC20;
